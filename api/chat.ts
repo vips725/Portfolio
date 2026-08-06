@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { buildSystemPrompt } from '../src/lib/chatContext'
+import { buildSystemPrompt } from '../src/lib/chatContext.ts'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') {
