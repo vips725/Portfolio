@@ -1,4 +1,4 @@
-import { projectsData, education, experience, tools, services, aboutMe } from "../constants"
+import { projectsData, education, experience, tools, services, aboutMe } from "../constants/index.js"
 
 export function buildSystemPrompt(): string {
   const projectsText = projectsData
