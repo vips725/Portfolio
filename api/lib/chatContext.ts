@@ -1,4 +1,10 @@
-import { projectsData, education, experience, tools, services, aboutMe } from "../constants/index.js"
+import {
+  projectsData,
+  education,
+  experience,
+  tools,
+  aboutMe,
+} from "./constants"
 
 export function buildSystemPrompt(): string {
   const projectsText = projectsData
@@ -17,8 +23,6 @@ export function buildSystemPrompt(): string {
   const experienceText = experience
     .map((e) => `- ${e.title} at ${e.institute} (${e.year}): ${e.desc}`)
     .join('\n')
-
-  const servicesText = services.map((s) => `- ${s.title}: ${s.desc}`).join('\n')
 
   return `You are the portfolio assistant for ${aboutMe.name}, a ${aboutMe.role} based in ${aboutMe.location}.
 You're embedded in ${aboutMe.name}'s personal portfolio website. Visitors — often recruiters or hiring managers — will ask about them.
@@ -50,9 +54,6 @@ ${educationText}
 
 EXPERIENCE:
 ${experienceText}
-
-SERVICES OFFERED:
-${servicesText}
 
 STYLE:
 - Keep answers concise (2-4 sentences) unless asked for detail.
