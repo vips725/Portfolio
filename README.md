@@ -22,7 +22,7 @@ A personal portfolio website built with React, TypeScript, Vite, and Tailwind CS
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stacks
 
 **Frontend**
 - React 18 + TypeScript
