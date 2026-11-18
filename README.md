@@ -1,4 +1,4 @@
-# Vipul Shah — Portfolio
+# Vipul Raj Shah — Portfolio
 
 A personal portfolio website built with React, TypeScript, Vite, and Tailwind CSS — featuring an AI chatbot that can answer questions about my projects, skills, and experience, powered by Groq.
 
